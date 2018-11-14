@@ -8,7 +8,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { PortafolioComponent } from './paginas/portafolio/portafolio.component';
 import { AboutComponent } from './paginas/about/about.component';
 import { PortafolioItemComponent } from './paginas/portafolio-item/portafolio-item.component';
-
+import {HttpClientModule} from '@angular/common/http';
+import { SearchComponent } from './paginas/search/search.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +17,13 @@ import { PortafolioItemComponent } from './paginas/portafolio-item/portafolio-it
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    PortafolioItemComponent
+    PortafolioItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
