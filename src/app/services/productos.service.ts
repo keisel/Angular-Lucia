@@ -26,7 +26,10 @@ export class ProductosService {
       this.http.get('https://angular-de2ec.firebaseio.com/productos_idx.json')
     .subscribe((resp: Producto[]) => {
       this.productos=resp;
-      this.cargando=false;
+      
+      setTimeout(() => {
+        this.cargando=false;
+      }, 2500);
       resolve();
 
     });
