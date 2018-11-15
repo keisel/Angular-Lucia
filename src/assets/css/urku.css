@@ -236,6 +236,8 @@ body {
 .rk-footer {
   margin-top: 10.5rem;
   margin-bottom: 2rem;
+  
+ 
 }
 
 .rk-footer__text {
@@ -448,6 +450,7 @@ body {
 
 .rk-portfolio__items {
   margin-top: -4px;
+  
 }
 @media (min-width: 40em) {
   .rk-portfolio__items {
