@@ -28,7 +28,7 @@ export class ProductosService {
       this.productos=resp;
       
       setTimeout(() => {
-        
+        this.cargando=false;
       }, 5000);
       resolve();
 
